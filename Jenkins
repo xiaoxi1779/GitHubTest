@@ -1,11 +1,11 @@
-pipeline{
+pipeline {
     agent none
-    stages{
-        agent{
+    stages {
+        agent {
             dockerfile true
         }
-        stage("Test"){
-            steps{
+        stage("Test") {
+            steps {
                 sh 'echo is success'
             }
         }
