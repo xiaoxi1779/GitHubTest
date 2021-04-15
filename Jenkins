@@ -3,7 +3,9 @@ pipeline {
     stages {
         stage("Test") {
             agent {
-                dockerfile true
+                dockerfile {
+                    filename 'Dockerfile'
+                }
             }
             steps {
                 sh 'echo is success'
