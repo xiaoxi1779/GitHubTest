@@ -8,3 +8,4 @@ COPY target/  /www
 WORKDIR /www
 RUN java -jar GitHubTest-0.0.1-SNAPSHOT.jar
 EXPOSE 8090
+CMD ["/bin/bash"]
